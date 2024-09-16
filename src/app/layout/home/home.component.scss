@@ -1,0 +1,35 @@
+/* Styliser le tableau avec texte rouge et taille de police 12px */
+h4{
+    color: rgb(250, 244, 244);
+    background: linear-gradient(to top , white, #da0606d0);
+    padding: 10px;
+     border-radius: 5px;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px; /* Taille de police de 12 pixels */
+
+  }
+
+  .table th, .table td {
+    border: 1px solid #ddd; /* Bordure fine pour les cellules */
+    padding: 5px;
+    text-align: left;
+    color: #C80000; /* Couleur de texte rouge */
+  }
+
+  .table th {
+    background-color: #f2f2f2; /* Couleur de fond pour l'en-tête */
+  }
+  .table tr td  {
+    color: #020202; /* Couleur de fond pour l'en-tête */
+  }
+  h4{
+    width: 100%;
+    text-align: center;
+  }
+
+

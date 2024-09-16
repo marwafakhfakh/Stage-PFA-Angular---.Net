@@ -1,0 +1,341 @@
+/* Style du cadre autour du formulaire */
+.form-wrapper {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+
+  /* Boutons sous le titre */
+  .button-group-top {
+    margin-bottom: 20px; /* Espacement entre les boutons du haut et le formulaire */
+    text-align: right; /* Aligner les boutons à droite */
+  }
+
+  /* Style de la mise en page du formulaire */
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .form-container p {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    margin: 0;
+  }
+
+  .form-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="tel"],
+  input[type="text"],
+  select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  .btn {
+    padding: 8px ;
+    margin: 2px;
+    border-radius: 4px;
+   border: 1px;
+    font-size: 14px;
+    background-color: rgb(250, 244, 244); background: linear-gradient(to top , #4999fc , white);
+
+  }
+  .form-container-co{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .form-container-co p {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    margin: 0;
+  }
+  .form-container-co label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .container {
+    border: 2px solid #333; /* Bordure du cadre */
+    padding: 15px; /* Espacement à l'intérieur du cadre */
+    display: flex; /* Utiliser Flexbox pour aligner les composants horizontalement */
+    gap: 20px; /* Espacement entre les composants */
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .word-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .frame {
+    display: flex;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px; /* Ajustez cette largeur selon vos besoins */
+  gap: 20px; /* Espacement entre les deux sections */
+  background-color: #f9f9f9;}
+
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin: 0;
+    color: rgb(137, 13, 13);
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn-b {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(250, 244, 244); background: linear-gradient(to top , #4999fc , white);
+    color: rgb(10, 10, 10);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-b i {
+    margin-right: 8px; /* Espacement entre l'icône et le texte */
+  }
+
+  .btn-b:hover {
+    background-color: #0056b3;
+  }
+  .frame-fr {
+    max-width: 400px;
+   /* Largeur maximale du conteneur */
+  }
+
+  .form-row {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments sur une seule ligne */
+    align-items: center; /* Alignement vertical au centre */
+    margin-bottom: 10px; /* Espacement entre les lignes */
+  }
+
+  .form-label {
+    display: flex; /* Utilisation de flexbox pour le label */
+    align-items: center; /* Alignement vertical au centre dans le label */
+    margin-right: 30px; /* Espacement entre le label et l'input */
+    min-width: 200px; /* Largeur minimale du label pour une mise en page cohérente */
+  }
+
+  .form-label span {
+    margin-right: 10px; /* Ajoute un espacement entre le span et l'input */
+  }
+
+  .form-input {
+    flex: 1; /* Permet à l'input de prendre l'espace restant disponible */
+    background-color: yellow; /* Couleur de fond jaune pour l'input */
+    padding: 5px; /* Espacement intérieur de l'input */
+    border: 1px solid #ccc; /* Bordure grise légère pour l'input */
+    border-radius: 4px; /* Bordures arrondies */
+  }
+  .form-column{
+    display: flex; /* Utilisation de flexbox pour aligner les éléments sur une seule ligne */
+    align-items: center; /* Alignement vertical au centre */
+    margin-bottom: 10px; /* Espacement entre les lignes */
+  }
+
+
+
+/* Style pour le tableau */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    font-size: 14px;
+
+}
+
+/* Style pour les en-têtes du tableau */
+.table thead th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    max-width: fit-content;
+}
+
+/* Style pour les cellules du tableau */
+.table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style pour les lignes du tableau (zébré) */
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style pour les lignes du tableau (au survol) */
+.table tbody tr:hover {
+    background-color: #e2e2e2;
+}
+
+/* Style pour les cellules vides */
+.table td {
+    text-align: center;
+}
+
+/* Style pour le tableau si vous voulez un style global pour les bordures */
+.table,
+.table th,
+.table td {
+    border: 1px solid #c0bfbf;
+}
+
+/* Style pour le conteneur principal */
+.container {
+    display: flex; /* Utilise Flexbox pour diviser le conteneur */
+    gap: 10px; /* Espace entre les deux parties */
+}
+
+/* Partie gauche avec le tableau */
+.left-part {
+    flex: 2; /* Prend 50% de l'espace disponible */
+    padding: 10px;
+}
+
+/* Partie droite avec le cadre */
+.right-part {
+    flex: 1; /* Prend 50% de l'espace disponible */
+    padding: 5px;
+    border-top: 1px solid #000; /* Bordure en haut avec couleur noire */
+    border-left: 1px solid #000; /* Bordure à gauche avec couleur noire */
+    border-right: none; /* Pas de bordure à droite */
+    border-bottom: none; /* Pas de bordure en bas */
+    background-color: #f5f5f5; /* Couleur de fond du cadre */
+}
+
+
+.frame {
+    position: relative; /* Pour positionner le bouton de défilement */
+}
+
+.table-container {
+    overflow-x: auto; /* Activer le défilement horizontal */
+    white-space: nowrap; /* Empêcher le contenu de s'enrouler */
+    max-width: 100%; /* Limiter la largeur maximale du conteneur */
+}
+
+.frame {
+    position: relative; /* Pour positionner le bouton de défilement */
+}
+
+.table-container {
+    overflow-x: auto; /* Activer le défilement horizontal */
+    white-space: nowrap; /* Empêcher le contenu de s'enrouler */
+    max-width: 100%; /* Limiter la largeur maximale du conteneur */
+}
+
+.custom-select{
+
+    background-color: #ffffff; /* Couleur de fond */
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 4px; /* Coins arrondis */
+    padding: 3px; /* Espacement interne avec espace pour l'icône */
+
+
+}
+.custom-select-wrapper::after {
+    content: "\f078"; /* Code de l'icône de chevron vers le bas de Font Awesome */
+    font-family: "Font Awesome 5 Free"; /* Utilisation de Font Awesome */
+
+    position: absolute;
+    top: 20%;
+    right: 10px; /* Espacement depuis le bord droit */
+    transform: translateY(-50%); /* Centrer verticalement */
+    pointer-events: none; /* Ne pas interférer avec les clics */
+    font-size: 16px; /* Taille de l'icône */
+    color: #47a3ef; /* Couleur de l'icône */
+}
+
+
+/* Media queries pour les écrans plus petits */
+@media (max-width: 768px) {
+    .form-wrapper {
+      flex-direction: column;
+    }
+
+    .form-container {
+      min-width: auto;
+      margin-bottom: 1rem;
+    }
+
+    .button-group-top {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .title {
+        font-size: 1.2rem;
+      }
+
+      .btn-b {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+      }
+
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+
+  /* Media queries pour les très petits écrans */
+  @media (max-width: 480px) {
+    button {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+
+    .form-container p {
+      font-size: 0.9rem;
+    }
+
+    .table {
+      font-size: 0.8rem;
+    }
+    .title {
+        font-size: 1rem;
+      }
+
+      .btn-b {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+      }
+  }
+
+

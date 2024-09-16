@@ -1,0 +1,570 @@
+<section>
+    <h2>Fiche Monture</h2>
+    <div class="form-wrapper">
+        <div class="form-container">
+            <p>
+                <label for="number">
+                    <span>Code monture</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="tel" id="number" name="cardnumber" required />
+            </p>
+            <p>
+                <label for="card">
+                    <span>Fournisseur</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="TeenVision">TeenVision</option>
+                    <option value="KidsVision">KidsVision</option>
+                    <option value="VisionOptic">VisionOptic</option>
+                </select>
+            </p>
+            <!-- Ajoutez les autres champs de formulaire de la même manière -->
+
+
+            <p>
+                <label for="card">
+                    <span>Matière</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="métal">métal</option>
+                    <option value="plastique">plastique</option>
+                    <option value="acétate">acétate</option>
+                    <option value="titane">titane</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">
+                    <span>Type </span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="monture pleine">monture pleine</option>
+                    <option value="demi-monture">demi-monture</option>
+                    <option value="sans monture">sans monture</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">
+                    <span>Forme</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="rond">rond</option>
+                    <option value="carré">carré</option>
+                    <option value="aviateur">aviateur</option>
+                    *<option value="rectangulaire">rectangulaire</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">
+                    <span>Famille</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="Montures en Acétate">Montures en Acétate</option>
+                    <option value="Montures en Plastique">Montures en Plastique</option>
+                    <option value="Montures en Acétate">Montures en Acétate</option>
+                    <option value="Montures en Métal">Montures en Métal</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">
+                    <span>Marque</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="Ray-Ban">Ray-Ban</option>
+                    <option value="Oakley">Oakley</option>
+                    <option value="Gucci">Gucci</option>
+                    <option value="TeenOptics">TeenOptics</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">
+                    <span>Modèle</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="RB2132">RB2132</option>
+                    <option value="OO9208">OO9208</option>
+                    <option value="GG0061S">GG0061S</option>
+                    <option value="TO2002">TO2002</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">
+                    <span>Tranche age</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="Adulte">Adulte</option>
+                    <option value="Enfant">Enfant(3-12 ans)</option>
+                    <option value="Adolescent">Adolescent(13-17 ans)</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">
+                    <span>Couleur Monture</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </p>
+            <p>
+                <label for="card">
+                    <span>Couleur verres</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </p>
+            <p>
+                <label for="number">
+                    <span>Réfèrance</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="tel" id="number" name="cardnumber" required />
+            </p>
+            <p>
+                <label for="number">
+                    <span>Taille</span>
+                    <strong><span aria-label="required"></span></strong>
+                </label>
+                <input type="tel" id="number" name="cardnumber" required />
+            </p>
+            <p>
+                <label for="number">
+                    <span>code chez Fournisseur</span>
+                    <strong><span aria-label="required"></span></strong>
+                </label>
+                <input type="tel" id="number" name="cardnumber" required />
+            </p>
+
+        </div>
+
+    </div>
+</section>
+<section>
+    <div class="form-wrapper">
+        <div class="form-container">
+            <div class="button-group-top">
+                <button type="button" class="btn btn-primary" (click)="displayForm(1)">Détail prix</button>
+                <button type="button" class="btn btn-secondary" (click)="displayForm(2)">Détails prix Achat Etrangé
+                </button>
+                <button type="button" class="btn btn-danger" (click)="displayForm(3)">Code A Barre</button>
+                <button type="button" class="btn btn-primary" (click)="displayForm(4)">Observation</button>
+                <button type="button" class="btn btn-secondary" (click)="displayForm(5)">Stock </button>
+                <button type="button" class="btn btn-danger" (click)="displayForm(6)">Garantie</button>
+                <button type="button" class="btn btn-secondary" (click)="displayForm(7)">Article lié</button>
+                <button type="button" class="btn btn-danger" (click)="displayForm(8)">Article SAW</button>
+            </div>
+        </div>
+        <!-- Formulaire 1 -->
+        <div *ngIf="showForm1" class="form-section">
+            <div class="container">
+
+
+
+
+                <div class="frame">
+                    <!-- Section de la liste des mots -->
+                    <div class="form-wrapper">
+                        <div class="word-column">
+                            <div>
+                                <input type="checkbox" id="actif" name="actif" checked />
+                                <label for="actif">Actif</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="stockable" name="stockable" checked />
+                                <label for="stockable">Stockable</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="numero_serie" name="numero_serie" />
+                                <label for="numero_serie">Numéro Série</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="promotion" name="promotion" />
+                                <label for="promotion">Promotion</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="etui_special" name="etui_special" />
+                                <label for="etui_special">Etui Spécial</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fodec" name="fodec" />
+                                <label for="fodec">Fodec</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section du formulaire -->
+                    <div class="form-wrapper">
+                        <div class="form-container-co">
+                            <p>
+                                <label for="number1">
+                                    <span>Prix Achat HT</span>
+                                    <strong><span aria-label="required"></span></strong>
+                                </label>
+                                <input type="tel" id="number1" name="cardnumber1" required />
+                            </p>
+                            <p>
+                                <label for="number2">
+                                    <span>Dernier P.Achat Net HT</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                                <input type="tel" id="number2" name="cardnumber2" required />
+                            </p>
+                            <p>
+                                <label for="number3">
+                                    <span>Prix Achat Net TTC</span>
+                                    <strong><span aria-label="required"></span></strong>
+                                </label>
+                                <input type="tel" id="number3" name="cardnumber3" required />
+                            </p>
+                            <p>
+                                <label for="number4">
+                                    <span>Dernier Tx.Remise</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                                <input type="tel" id="number4" name="cardnumber4" required />
+                            </p>
+                            <p>
+                                <label for="number5">
+                                    <span>Marge</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                                <input type="tel" id="number5" name="cardnumber5" required />
+                            </p>
+                            <p>
+                                <label for="tva">
+                                    <span>TVA</span>
+                                </label>
+                                <select id="tva" name="cardnumber5">
+                                    <option value="19.00">19.00</option>
+                                    <option value="35">35.00</option>
+
+                                </select>
+                            </p>
+                            <p>
+                                <label for="number6">
+                                    <span>Prix Vente HT</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                                <input type="tel" id="number6" name="cardnumber6" required />
+                            </p>
+                            <p>
+                                <label for="number7">
+                                    <span>Prix vente TTC</span>
+                                    <strong><span aria-label="required">*</span></strong>
+                                </label>
+                                <input type="tel" id="number7" name="cardnumber7" required />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Formulaire 2 -->
+        <div *ngIf="showForm2" class="form-section">
+
+
+            <div class="frame-fr">
+                <p class="form-row">
+                    <label for="number1" class="form-label">
+                        <span>Prix Achat HT</span>
+                        <strong><span aria-label="required"></span></strong>
+                    </label>
+                    <input type="tel" id="number1" name="cardnumber1" required />
+                </p>
+                <p class="form-row">
+                    <label for="number2" class="form-label">
+                        <span>Dernier P.Achat Net HT</span>
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
+                    <input type="tel" id="number2" name="cardnumber2" required />
+                </p>
+                <p class="form-row">
+                    <label for="number3" class="form-label">
+                        <span>Prix Achat Net TTC</span>
+                        <strong><span aria-label="required"></span></strong>
+                    </label>
+                    <input type="tel" id="number3" name="cardnumber3" required />
+                </p>
+            </div>
+
+        </div>
+        <!-- Formulaire 3 -->
+        <div *ngIf="showForm3" class="form-section">
+
+
+            <div class="frame">
+                <!-- Section de la liste des mots -->
+                <div class="form-wrapper">
+                    <p class="form-column">
+                        <label for="number1">
+                            <span>Code à barre</span>
+                            <strong><span aria-label="required"></span></strong>
+                        </label>
+                        <input type="tel" id="number1" name="cardnumber1" required />
+                    </p>
+                    <p class="form-column">
+                        <label for="number2">
+                            <span>Code à barre Originale </span>
+                            <strong><span aria-label="required"></span></strong>
+                        </label>
+                        <input type="tel" id="number2" name="cardnumber2" required />
+                    </p>
+                </div>
+
+                <!-- Section du formulaire -->
+                <div class="form-wrapper">
+
+
+
+                    <p>
+                        <label for="number7">
+                            <span>Nombre de copie</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="tel" id="number7" name="cardnumber7" required />
+                    </p>
+
+                    <button class="btn-b">
+                        <i class="pi pi-print"></i> Imprimer
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div *ngIf="showForm4" class="form-section">
+
+
+            <div class="frame">
+                <div class="container">
+
+
+
+                    <button class="btn-b-bt">
+                        <i class="pi pi-print"></i> Image
+                    </button>
+                    <button class="btn-b-bt">
+                        <i class="pi pi-trash"></i> Supprimer
+                    </button>
+
+                </div>
+                <div class="container">
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+ <!-- Formulaire 5 -->
+ <div *ngIf="showForm5" class="form-section">
+
+
+    <div class="frame">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">CodeDepot</th>
+                    <th scope="col">CodeMonture</th>
+                    <th scope="col">Quantite</th>
+                    <th scope="col">PrixUnitaire</th>
+                    <th scope="col">QuantiteMi</th>
+                    <th scope="col">QuantiteM</th>
+                    <th scope="col">QuantiteR
+                        </th>
+                    <th scope="col">PrixUnit</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+
+
+
+
+                </tr>
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<!-- Formulaire 6 -->
+<div *ngIf="showForm6" class="form-section">
+
+
+    <div class="frame">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Type Garantie</th>
+                    <th scope="col">Durée(Année)</th>
+                    <th scope="col">Durée(Mois)</th>
+                    <th scope="col">Durée(Jour)</th>
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+        <!-- Formulaire 7 -->
+        <div *ngIf="showForm7" class="form-section">
+            <div class="frame">
+                <!-- Conteneur divisé en deux parties -->
+
+                    <!-- Partie gauche avec le tableau -->
+                    <div class="left-part">
+                        <div class="form-wrapper">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Article</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Partie droite avec le cadre -->
+                    <div class="right-part">
+
+
+                            <div class="frame-content">
+                                <!-- Ajoutez ici le contenu de votre cadre -->
+                                <p></p>
+
+
+                            </div>
+
+
+
+                    </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- Formulaire 8 -->
+        <div *ngIf="showForm8" class="form-section">
+            <div class="frame">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Code Article SAV</th>
+                            <th scope="col">Désignation</th>
+                            <th scope="col">Pourcentage</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td>  <div class="custom-select-wrapper">
+                                <select class="custom-select">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div></td>
+                            <td>BRANCHE GAUCHE</td>
+                            <td>BRANCHE GAUCHE</td>
+                            <td>0</td>
+
+
+
+
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td>CHARNIER GAUCHE</td>
+                            <td>CHARNIER GAUCHE</td>
+                            <td>0</td>
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td>AMBOU DROIT</td>
+                            <td>AMBOU DROIT</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr >
+                            <td></td>
+                            <td>AMBOU GAUCHE</td>
+                            <td>AMBOU GAUCHE</td>
+                            <td>0</td>
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td>BRANCHE ADABTABLE DROITE</td>
+                            <td>BRANCHE ADABTABLE DROITE</td>
+                            <td>0</td>
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td>BRANCHE ADABTABLE GAUCHE</td>
+                            <td>BRANCHE ADABTABLE GAUCHE</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+</div>
+
+
+
+</section>
+<div class="header-container">
+    <h1 class="title">F1 : Recherche accélerée</h1>
+    <div class="button-container">
+        <button class="btn-b"><i class="pi pi-copy"></i> Détail Mouvement</button>
+        <button class="btn-b"><i class="pi pi-check"></i> Valider [F4]</button>
+        <button class="btn-b"><i class="pi pi-times"></i> Annuler [Ech]</button>
+    </div>
+</div>
+
+
