@@ -34,7 +34,7 @@ export class AppMenuComponent implements OnInit {
                             { label: 'Consulter', icon: 'pi pi-eye', routerLink: ['/Operation/Consulter'] },
                             { label: 'Supprimer', icon: 'pi pi-trash', routerLink: ['/Operation/Supprimer'] },
                             { label: 'Fermer', icon: 'pi pi-times', routerLink: ['/Operation/Fermer'] },
-                            // Ajoutez d'autres sous-opérations ici si nécessaire
+                          
                         ]
                     },
                     { label: 'Edition', icon: 'pi pi-pencil', routerLink: ['/Edition'] },

@@ -50,7 +50,6 @@ export class CreerComponent {
     }
   }
 
-  // Méthode pour réinitialiser tous les formulaires
   private resetForms() {
     this.showForm1 = false;
     this.showForm2 = false;
@@ -61,6 +60,6 @@ export class CreerComponent {
     this.showForm7 = false;
     this.showForm8 = false;
   }
- 
+
 
 }

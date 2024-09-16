@@ -1,4 +1,4 @@
-/* Style du cadre autour du formulaire */
+
 .form-wrapper {
     border: 1px solid #ddd;
     padding: 20px;
@@ -9,13 +9,13 @@
     position: relative;
   }
 
-  /* Boutons sous le titre */
+
   .button-group-top {
-    margin-bottom: 20px; /* Espacement entre les boutons du haut et le formulaire */
-    text-align: right; /* Aligner les boutons à droite */
+    margin-bottom: 20px;
+    text-align: right;
   }
 
-  /* Style de la mise en page du formulaire */
+
   .form-container {
     display: flex;
     flex-wrap: wrap;
@@ -72,10 +72,10 @@
   }
 
   .container {
-    border: 2px solid #333; /* Bordure du cadre */
-    padding: 15px; /* Espacement à l'intérieur du cadre */
-    display: flex; /* Utiliser Flexbox pour aligner les composants horizontalement */
-    gap: 20px; /* Espacement entre les composants */
+    border: 2px solid #333;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
     align-items: flex-start;
     justify-content: center;
   }
@@ -90,8 +90,8 @@
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  max-width: 900px; /* Ajustez cette largeur selon vos besoins */
-  gap: 20px; /* Espacement entre les deux sections */
+  max-width: 900px;
+  gap: 20px;
   background-color: #f9f9f9;}
 
 
@@ -127,7 +127,7 @@
   }
 
   .btn-b i {
-    margin-right: 8px; /* Espacement entre l'icône et le texte */
+    margin-right: 8px;
   }
 
   .btn-b:hover {
@@ -135,42 +135,42 @@
   }
   .frame-fr {
     max-width: 400px;
-   /* Largeur maximale du conteneur */
+
   }
 
   .form-row {
-    display: flex; /* Utilisation de flexbox pour aligner les éléments sur une seule ligne */
-    align-items: center; /* Alignement vertical au centre */
-    margin-bottom: 10px; /* Espacement entre les lignes */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
   }
 
   .form-label {
-    display: flex; /* Utilisation de flexbox pour le label */
-    align-items: center; /* Alignement vertical au centre dans le label */
-    margin-right: 30px; /* Espacement entre le label et l'input */
-    min-width: 200px; /* Largeur minimale du label pour une mise en page cohérente */
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    min-width: 200px;
   }
 
   .form-label span {
-    margin-right: 10px; /* Ajoute un espacement entre le span et l'input */
+    margin-right: 10px;
   }
 
   .form-input {
-    flex: 1; /* Permet à l'input de prendre l'espace restant disponible */
-    background-color: yellow; /* Couleur de fond jaune pour l'input */
-    padding: 5px; /* Espacement intérieur de l'input */
-    border: 1px solid #ccc; /* Bordure grise légère pour l'input */
-    border-radius: 4px; /* Bordures arrondies */
+    flex: 1;
+    background-color: yellow;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
   .form-column{
-    display: flex; /* Utilisation de flexbox pour aligner les éléments sur une seule ligne */
-    align-items: center; /* Alignement vertical au centre */
-    margin-bottom: 10px; /* Espacement entre les lignes */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
   }
 
 
 
-/* Style pour le tableau */
+
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -188,47 +188,45 @@
     max-width: fit-content;
 }
 
-/* Style pour les cellules du tableau */
+
 .table tbody td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
 }
 
-/* Style pour les lignes du tableau (zébré) */
+
 .table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Style pour les lignes du tableau (au survol) */
+
 .table tbody tr:hover {
     background-color: #e2e2e2;
 }
 
-/* Style pour les cellules vides */
+*/
 .table td {
     text-align: center;
 }
 
-/* Style pour le tableau si vous voulez un style global pour les bordures */
 .table,
 .table th,
 .table td {
     border: 1px solid #c0bfbf;
 }
 
-/* Style pour le conteneur principal */
+
 .container {
-    display: flex; /* Utilise Flexbox pour diviser le conteneur */
-    gap: 10px; /* Espace entre les deux parties */
+    display: flex;
+    gap: 10px;
 }
 
-/* Partie gauche avec le tableau */
+
 .left-part {
-    flex: 2; /* Prend 50% de l'espace disponible */
+    flex: 2;
     padding: 10px;
 }
 
-/* Partie droite avec le cadre */
 .right-part {
     flex: 1; /* Prend 50% de l'espace disponible */
     padding: 5px;
@@ -241,49 +239,45 @@
 
 
 .frame {
-    position: relative; /* Pour positionner le bouton de défilement */
+    position: relative;
 }
 
 .table-container {
-    overflow-x: auto; /* Activer le défilement horizontal */
-    white-space: nowrap; /* Empêcher le contenu de s'enrouler */
-    max-width: 100%; /* Limiter la largeur maximale du conteneur */
+    overflow-x: auto; white-space: nowrap;
+    max-width: 100%;
 }
 
 .frame {
-    position: relative; /* Pour positionner le bouton de défilement */
+    position: relative;
 }
 
 .table-container {
-    overflow-x: auto; /* Activer le défilement horizontal */
-    white-space: nowrap; /* Empêcher le contenu de s'enrouler */
-    max-width: 100%; /* Limiter la largeur maximale du conteneur */
+    overflow-x: auto;     white-space: nowrap;
+    max-width: 100%;
 }
 
 .custom-select{
 
-    background-color: #ffffff; /* Couleur de fond */
-    border: 1px solid #ccc; /* Bordure légère */
-    border-radius: 4px; /* Coins arrondis */
-    padding: 3px; /* Espacement interne avec espace pour l'icône */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 3px;
 
 
 }
 .custom-select-wrapper::after {
-    content: "\f078"; /* Code de l'icône de chevron vers le bas de Font Awesome */
+    content: "\f078";
     font-family: "Font Awesome 5 Free"; /* Utilisation de Font Awesome */
 
     position: absolute;
     top: 20%;
-    right: 10px; /* Espacement depuis le bord droit */
-    transform: translateY(-50%); /* Centrer verticalement */
-    pointer-events: none; /* Ne pas interférer avec les clics */
-    font-size: 16px; /* Taille de l'icône */
-    color: #47a3ef; /* Couleur de l'icône */
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    color: #47a3ef;
 }
 
-
-/* Media queries pour les écrans plus petits */
 @media (max-width: 768px) {
     .form-wrapper {
       flex-direction: column;
